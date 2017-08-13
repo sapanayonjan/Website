@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+	<html>
+	<head>
+		<link rel="shortcut icon" type="image/x-icon" href="../logo/site_logo.png"><!--for the icon in the tab bar-->
+		<title>Wanderlochan | Home</title><!--gives title-->
+		<!--To have wrapper from top-->
+            
+<style type="text/css">
+		*
+			{
+				margin: 0px
+			}
+			
+		@font-face { font-family: Ananda; src: url(fonts/Ananda_Neptouch.ttf);<!--To have a unique font for user convinience-->
+			} 
+		
+		
+		</style>
+	</head>
+	<body style="background-color: #202020"><!--Back ground of the webpage--><!--Starting of Body-->
+	<p style="color: white; font-family:Ananda; font-size: 30pt; text-align:center;  margin-bottom:10px;margin-top: 20px;">
+                    	We are all connected by the love for travel!</p>
+                    	
+                 				
+       <center><img src="images/image_0.jpg" name="slide" width="53%" height="53%" border="grey"></center> 
+
+
+		<script type="text/javascript">
+			var image1=new Image();
+			image1.src="images/image_11.jpg";
+			var image2=new Image();
+			image2.src="images/image_15.jpg";
+			var image3=new Image();
+			image3.src="images/image_14.jpg";
+			var image4=new Image();
+			image4.src="images/image_10.jpg";
+			//variable that will increment through the images
+			var step=1;
+			function slideit(){
+				document.images.slide.src=eval("image"+step+".src");
+				if (step<4)
+				{
+					step++;
+				}
+				else
+				{
+					step=1;
+				}
+				//call function "slideit()" every 3 seconds
+				setTimeout("slideit()",3000);
+			}
+			slideit();
+
+		</script>
+		<p style="font-family: Ananda;font-size: 30px; margin-top:10px; margin-bottom:10px; text-align: center; text-decoration:none;"><a href="pages/home.html" style="color:#ff6600">Lets Travel ! </a>
+                    </p> 
+    </body><!--Ending of Body-->
+	</html>
